@@ -16,7 +16,7 @@ struct SettingsView: View {
             }
             Button("Create Shortcut") {
                 let manager = ShortcutManager()
-                manager.createScreenTimeShortcut(forApp: selectedApp, stepGoal: stepGoal)
+               // manager.createScreenTimeShortcut(forApp: selectedApp, stepGoal: stepGoal)
             }
         }.navigationTitle("Settings")
     }

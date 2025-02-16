@@ -7,11 +7,19 @@
 
 import SwiftUI
 
-@main
-struct StepScreenApp: App {
+
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    let appsToRestrict = [
+                        "com.instagram.ios",
+                        "com.tiktok.app",
+                        "com.snapchat.ios"
+                    ]  // Example apps
+                    //ShortcutManager.shared.checkAndCreateShortcut(with: appsToRestrict)
+                }
         }
     }
 }
